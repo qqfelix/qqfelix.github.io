@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
 body {
     margin: 0;
     font: 15px/1.7 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
@@ -34,6 +39,10 @@ a {
 
 /* welcome.css */
 
+.welcome .header{
+    background: rgba(0, 0, 0, 0.3);
+}
+
 .banner-page {
     background: url("./images/felix-banner.jpg");
     height: 450px;
@@ -43,7 +52,7 @@ a {
 }
 
 .tagline {
-    margin-top: 150px;
+    margin-top: 200px;
     margin-bottom: 10px;
     color: #fff;
     text-align: center;
@@ -51,12 +60,6 @@ a {
     font-weight: normal;
 }
 
-.tagline-caption {
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    opacity: 0.8;
-}
 
 /* layout.css */
 
@@ -67,6 +70,36 @@ a {
     width: 100%;
     background: #00b0b8;
     height: 50px;
+}
+
+.header .nav {
+    margin: 0;
+    padding: 0;
+    float: left;
+    line-height: 50px;
+}
+
+.header .nav li {
+    margin-right: 7px;
+    list-style: none;
+    float: left;
+}
+
+.header .nav li a {
+    color: #fff;
+    font-size: 13px;
+    padding: 8px 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.header .nav li a:hover {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header .nav li.current a {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid transparent;
 }
 
 .header .logo {
