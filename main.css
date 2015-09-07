@@ -10,6 +10,7 @@
 }
 
 body {
+    min-width: 980px;
     margin: 0;
     font: 15px/1.7 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
     color: #555;
